@@ -1,5 +1,5 @@
 let bet_table=[];
-let bal=8;
+let bal=8;//balance
 function max_bet(balance){
     let base= balance/25000;
     let max_bet_amount= 0;
@@ -19,8 +19,8 @@ function max_bet(balance){
            
     }
     console.log("Total : "+(max_bet_amount-bet_table[bet_number-1]).toFixed(8));// sum of bet amounts
-    return bet_number;
+    return bet_number;//how many times I can bet with my balance 
 }
 
 console.log("you have "+max_bet(bal)+ " bets according your balance!");
-
+// it would return 24 bets in general with minimum balance 2$
